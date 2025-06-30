@@ -23,7 +23,7 @@ export default function RequestAirdrop() {
             await connection.confirmTransaction(signature, 'confirmed');
             console.log('Airdrop requested. Transaction signature:', signature);
             alert('Airdrop successful!');
-            // refreshBalance(); 
+            refreshBalance(); 
         } catch (error) {
             console.error("Airdrop failed:", error);
             alert(`Airdrop failed: ${error.message}`);
